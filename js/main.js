@@ -20,6 +20,15 @@ $(document).ready(function() {
         e.preventDefault();
         $('.menu__list').toggleClass('menu__list_active');
     });
+	$('.faq__tabs__title').click(function (e) {
+        e.preventDefault();
+        let elem = e.target;
+		let id = '1' + elem.getAttribute('id');
+		$('.faq__tabs__content').removeClass('faq__tabs__content--active');
+		jQuery("#"+id).addClass('faq__tabs__content--active');
+		$("aside").html('+');
+		$("aside."+id).html('-');
+	});
 	$('.slider__box').magnificPopup({
 		delegate: 'a',
 		type: 'image',
