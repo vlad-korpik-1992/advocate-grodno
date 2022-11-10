@@ -985,7 +985,19 @@ body {
 }
 .faq__tabs{
 	position: relative;
+	padding-top: 70px;
+}
+.faq__tabs--first{
 	padding-top: 25px;
+}
+.faq__title{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #000000;
+	margin: 0;
+	padding-bottom: 20px;
 }
 .faq__tabs__items{
 	display: flex;
@@ -1488,6 +1500,10 @@ body {
 		font-size: 30px;
     	line-height: 40px;
 	}
+	.faq__title{
+		font-size: 30px;
+		padding-bottom: 10px;
+	}
 }
 @media (max-width: 767px){
 	.about__letters {
@@ -1692,6 +1708,10 @@ body {
 	.faq__tabs{
 		padding-top: 0;
 	}
+	.faq__title {
+		font-size: 24px;
+		padding-bottom: 0;
+	}
 }
 @media (max-width: 576px){
 	.consultation__box{
@@ -1781,7 +1801,7 @@ body {
 		display: none;
 	}
 	.faq__tabs{
-		padding-top: 30px;
+		padding-top: 60px;
 	}
 	.faq__row__letters {
 		font-size: 125px;
